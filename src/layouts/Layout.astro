@@ -70,6 +70,23 @@ const { title, description } = Astro.props
     <!-- Demo dialog modal -->
     <DialogModal id="demo" content={ global_settings.demo }>
 
+    <!-- Konami code easter egg: ↑ ↑ ↓ ↓ ← → ← → B A -->
+    <script>
+      const KONAMI = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+      let pos = 0;
+      document.addEventListener('keydown', (e) => {
+        if (e.key === KONAMI[pos]) {
+          pos++;
+          if (pos === KONAMI.length) {
+            window.location.href = '/doom';
+            pos = 0;
+          }
+        } else {
+          pos = e.key === KONAMI[0] ? 1 : 0;
+        }
+      });
+    </script>
+
   </body>
 </html>
 
