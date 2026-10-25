@@ -21,8 +21,8 @@ importers:
         specifier: ^0.34.5
         version: 0.34.5
       swiper:
-        specifier: ^11.2.10
-        version: 11.2.10
+        specifier: ^14.0.0
+        version: 14.3.0
       tailwindcss:
         specifier: ^4.1.11
         version: 4.1.11
@@ -1625,8 +1625,8 @@ packages:
     resolution: {integrity: sha512-iq6eVVI64nQQTRYq2KtEg2d2uU7LElhTJwsH4YzIHZshxlgZms/wIc4VoDQTlG/IvVIrBKG06CrZnp0qv7hkcQ==}
     engines: {node: '>=12'}
 
-  swiper@11.2.10:
-    resolution: {integrity: sha512-RMeVUUjTQH+6N3ckimK93oxz6Sn5la4aDlgPzB+rBrG/smPdCTicXyhxa+woIpopz+jewEloiEE3lKo1h9w2YQ==}
+  swiper@14.3.0:
+    resolution: {integrity: sha512-qw0Xv1+sylM8KCQxWxV2iYAK2G6XjFGPZ/8F1baEsY8DK4A3sTnLx6jUJ0G71rDbVQ05JHMWkcWmJ5NvlxZO0w==}
     engines: {node: '>= 4.7.0'}
 
   tailwindcss@4.1.11:
@@ -1663,6 +1663,7 @@ packages:
   tsconfck@3.1.6:
     resolution: {integrity: sha512-ks6Vjr/jEw0P1gmOVwutM3B7fWxoWBL2KRDb1JfqGVawBmO5UsvmWOQFGHBPl5yxYz4eERr19E6L7NMv+Fej4w==}
     engines: {node: ^18 || >=20}
+    deprecated: unmaintained
     hasBin: true
     peerDependencies:
       typescript: ^5.0.0
@@ -3697,7 +3698,7 @@ snapshots:
     dependencies:
       ansi-regex: 6.1.0
 
-  swiper@11.2.10: {}
+  swiper@14.3.0: {}
 
   tailwindcss@4.1.11: {}
 
